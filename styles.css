@@ -1,0 +1,321 @@
+/* General formatting */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  html {
+    font-size: 1em;
+  }
+
+  body {
+    color: #156064;
+    font: 300 100%/1.5 "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set body height to fill the viewport */
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #4E6766;
+    margin: 0 0;
+    padding-top: 2em;
+    padding-bottom: 0;
+    background: white;
+    letter-spacing: 3px;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration: none;
+  }
+
+  h1 {
+    color: #4E6766;
+    text-decoration: none;
+    padding-top: 1em;
+    margin: 0;
+    font-weight: 200;
+  }
+
+  h2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F9F9F9;
+    font-size: 3em;
+    font-weight: 300;
+  }
+
+  footer {
+    width: 100%;
+    color: #4E6766;
+    background-color: #F9F9F9;
+    margin-top: auto;
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  li {
+    padding-top: .35em;
+    margin: 40px 20px;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    background-color: #0D0628;
+    color: #F9F9F9;
+  }
+
+  h2 {
+    color: #4E6766;
+  }
+
+  li:hover {
+    box-shadow: 8px -6px #4E6766;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #F9F9F9;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 0;
+  }
+
+  input[type=text]:focus {
+    transition: width 3s ease-in-out;
+    width: 100%;
+    background: #4E6766;
+    color: #F9F9F9;
+  }
+
+  input[type=email]:focus {
+    transition: width 3s ease-in-out;
+    width: 100%;
+    background: #4E6766;
+    color: #F9F9F9;
+  }
+
+  textarea:focus {
+    transition: width 3s ease-in-out;
+    width: 100%;
+    background: #4E6766;
+    color: #F9F9F9;
+  }
+
+/* Class formatting */
+
+.contact_us {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.home_slogan {
+  color: #F9F9F9;
+}
+
+.upland_header:hover {
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.coffee_banner {
+    text-align: center;
+    color: #F9F9F9;
+    height: 10%;
+    margin-top: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.wrapper_background {
+    width: 100%;
+    background-color: #D8DAD3;
+}
+
+.upland_logo {
+  width: auto;
+  height: 100px;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+  margin: 0 0 .5em 0;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.merchandise_container {
+  height: 100%;
+}
+
+.shop-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.costa_rica {
+  font-size: 2em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-height: 50vh;
+  width: 30vw;
+  background: url(./images/costa_rica.jpg) center / cover;
+}
+
+.ethiopian {
+  font-size: 2em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-height: 50vh;
+  width: 30vw;
+  background: url(./images/ethiopian.jpg) center / cover;
+}
+
+.kenyan {
+  font-size: 2em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  min-height: 50vh;
+  width: 30vw;
+  background: url(./images/kenyan.jpg) center / cover;
+}
+
+.kenyan:hover {
+  font-weight: 400;
+}
+
+.ethiopian:hover {
+  font-weight: 400;
+}
+
+.costa_rica:hover {
+  font-weight: 400;
+}
+
+.shop_banner {
+  height: 150px;
+  width: 100%;
+  background: url(./images/coffeechaff.jpg) center / cover;
+}
+
+.sam_bio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sam_pic {
+  height: auto;
+  width: 500px;
+  background: url(./images/junebug.jpg) center / cover;
+}
+
+.intro {
+  padding: 5%;
+}
+
+/*************************
+Media Queries
+*************************/
+@media only screen and (min-width: 800px) {
+  .sam_pic {
+    flex-grow: 2;
+  }
+}
+@media only screen and (max-width: 780px) {
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 2em;
+  }
+  li {
+    width: 20vw;
+    height: 5vh;
+    padding-top: .25em;
+  }
+  ul {
+    justify-content: center;
+  }
+  .upland_logo {
+    margin: 33px 0 0 0;
+    height: 75px;
+    width: auto;
+  }
+  ul.shop_list {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 50%;
+  }
+  .ethiopian {
+    justify-content: center;
+    min-height: 20vh;
+    width: auto;
+  }
+  .costa_rica {
+    justify-content: center;
+    min-height: 20vh;
+    width: auto;
+  }
+  .kenyan {
+    justify-content: center;
+    min-height: 20vh;
+    width: auto;
+  }
+}
+
