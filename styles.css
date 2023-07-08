@@ -286,7 +286,8 @@ Media Queries
   li {
     width: 20vw;
     height: 5vh;
-    padding-top: .25em;
+    padding-top: .7em;
+    font-size: .7em;
   }
   ul {
     justify-content: center;
@@ -316,6 +317,9 @@ Media Queries
     justify-content: center;
     min-height: 20vh;
     width: auto;
+  }
+  .sam_bio {
+    flex-direction: column;
   }
 }
 
