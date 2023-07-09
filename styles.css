@@ -139,6 +139,11 @@
     color: #F9F9F9;
   }
 
+  #welcome_message {
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
 /* Class formatting */
 
 .contact_us {
@@ -262,6 +267,40 @@
 
 .intro {
   padding: 5%;
+}
+
+.about_body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
+}
+
+.about_intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about_story {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about_photo1 {
+  width: 50%;
+  height: auto;
+  background: url(./images/coolingtray.jpg) center / cover;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.about_photo2 {
+  width: 50%;
+  height: auto;
+  background: url(./images/cup_beans.jpg) center;
+  margin-right: 5%;
+  margin-top: 2%;
 }
 
 /*************************
