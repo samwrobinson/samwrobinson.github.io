@@ -44,12 +44,12 @@
 
   h2 {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F9F9F9;
     font-size: 3em;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   footer {
@@ -153,6 +153,7 @@
 
 .home_slogan {
   color: #F9F9F9;
+  text-shadow: 2px -2px 5px black;
 }
 
 .upland_header:hover {
@@ -161,12 +162,13 @@
 }
 
 .coffee_banner {
-    text-align: center;
-    color: #F9F9F9;
-    height: 10%;
-    margin-top: auto;
-    width: 100%;
-    object-fit: contain;
+  text-align: center;
+  margin-top: auto;
+  color: #F9F9F9;
+  height: 70vh;
+  width: 100%;
+  background: url(./images/coffeedrum.jpg) center / cover;
+  filter: brightness(80%);
 }
 
 .wrapper_background {
@@ -306,9 +308,37 @@
 /*************************
 Media Queries
 *************************/
+
+@media only screen and (min-width: 600px) {
+  .container {
+    height: 80vh;
+  }
+  .coffee_banner {
+    text-align: center;
+    color: #F9F9F9;
+    height: 80vh;
+    margin-top: auto;
+    width: 100%;
+    background: url(./images/coffeedrum.jpg) center / cover;
+}
+}
+
 @media only screen and (min-width: 800px) {
   .sam_pic {
     flex-grow: 2;
+  }
+  .about_intro {
+    font-size: 2em;
+  }
+  .about_story {
+    font-size: 2em;
+  }
+  #intro_margin {
+    margin-top: 7%;
+  }
+  #welcome_message {
+    margin-top: 5%;
+    font-size: 3em;
   }
 }
 @media only screen and (max-width: 780px) {
