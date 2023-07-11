@@ -289,20 +289,22 @@
 }
 
 .about_photo1 {
-  width: 50%;
+  width: 125%;
   height: auto;
   background: url(./images/coolingtray.jpg) center / cover;
   margin-top: 2%;
   margin-left: 5%;
   margin-bottom: 2%;
+
 }
 
 .about_photo2 {
-  width: 50%;
+  width: 275vw;
   height: auto;
-  background: url(./images/cup_beans.jpg) center;
+  background: url(./images/cup_beans.jpg) center / cover;
   margin-right: 5%;
   margin-top: 2%;
+  flex-grow: 2;
 }
 
 /*************************
